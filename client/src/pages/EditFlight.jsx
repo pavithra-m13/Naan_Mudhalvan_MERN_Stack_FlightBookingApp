@@ -3,7 +3,6 @@ import '../styles/NewFlight.css'
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import Footer from './Footer';
-
 const EditFlight = () => {
     const [flightName, setFlightName] = useState('');
     const [flightId, setFlightId] = useState('');
