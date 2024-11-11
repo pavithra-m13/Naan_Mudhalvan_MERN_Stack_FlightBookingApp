@@ -1,10 +1,10 @@
 .flightAdmin-page1 {
     padding-top: 15vh;
     height: 100vh;
-    background-image: url('../assets/flightop.jpg'); /* Add your image path here */
-    background-size: cover;  /* Ensures the background covers the entire page */
-    background-position: center;  /* Centers the image */
-    background-repeat: no-repeat;  /* Prevents the image from repeating */
+    background-image: url('../assets/flightop.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,9 +14,9 @@
 .notApproved-box {
     width: 60%;
     text-align: center;
-    background-color: rgba(237, 239, 241, 0.8); /* Adjusted transparency */
+    background-color: rgba(237, 239, 241, 0.8); 
     padding: 4vh 4vw;
-    border-radius: 10px; /* Adds rounded corners for better aesthetics */
+    border-radius: 10px; 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
