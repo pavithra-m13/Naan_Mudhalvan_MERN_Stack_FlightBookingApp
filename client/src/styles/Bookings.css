@@ -1,0 +1,94 @@
+/* Body and HTML Setup */
+.bookingcss,html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.user-bookingsPage {
+    background-image: url('../assets/bookings.jpg'); /* Path to your background image */
+    background-size: cover;  /* Ensure the background covers the full page */
+    background-position: center top; /* Position the image at the top */
+    background-attachment: fixed; /* Fix the background while scrolling */
+    padding: 0 2vw;  /* Padding for the sides */
+    width: 100%; /* Set the width to cover the entire page */
+    min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+    margin-top: 0;  /* Remove any margin from the top */
+}
+
+.user-bookingsPage h1 {
+    color: rgb(73, 111, 138);
+    margin: 3vh 0; /* Adjust for space at the top */
+}
+
+/* Styling for the user booking grid */
+.user-bookings {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Display 3 cards per row */
+    gap: 20px; /* Add space between cards */
+    padding: 0;
+    margin-top: 10px; /* Adjust as needed to fit below the header */
+    width: 100%; /* Ensure it spans the full width */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    box-sizing: border-box; /* Prevent overflow issues */
+}
+
+/* Styling for each booking card */
+.user-booking {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure each card can stretch based on content */
+}
+
+/* Card header style */
+.user-booking h2 {
+    font-size: 1.4rem;
+    color: #2e6887;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+/* Styling for text content inside each booking */
+.user-booking p, .user-booking li {
+    color: rgb(46, 104, 135);
+    margin: 0.3rem 0;
+}
+
+.user-booking p b {
+    font-weight: 600;
+}
+
+/* Styling for the status (confirmed/cancelled) */
+.user-booking .status-cancelled {
+    color:rgb(224, 101, 101);
+}
+
+.user-booking .status-confirmed {
+    color: green;
+}
+
+/* Button styling */
+.user-booking button {
+    align-self: flex-start;
+    margin-top: 1rem;
+    padding: 0.5rem 0.5rem;
+    color: #fff;
+    background-color: #d9534f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.user-booking button:hover {
+    background-color: #c9302c;
+}
+

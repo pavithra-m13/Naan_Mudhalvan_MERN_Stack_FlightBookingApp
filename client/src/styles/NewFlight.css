@@ -1,0 +1,141 @@
+/* Sunset-themed page background */
+.NewFlightPage {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 18vh;
+    padding-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/newflight.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Form container with sunset colors and blur effect */
+.NewFlightPageContainer {
+    width: 50%;
+    max-width: 700px; /* Reduced max-width */
+    padding: 1.5rem 1rem; /* Reduced padding */
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #ffe3b8;
+}
+
+/* Centering and styling the heading */
+.NewFlightPageContainer h2 {
+    text-align: center;
+    color: #ffddaa;
+    font-size: 1.8rem; /* Slightly reduced font size */
+    margin-bottom: 1.5rem; /* Reduced margin */
+    font-weight: bold;
+}
+
+/* Styling for form-floating elements */
+.form-floating {
+    position: relative;
+    margin-bottom: 1rem; /* Reduced margin */
+}
+
+.form-floating input,
+.form-floating select {
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 1px solid #ffaf7a;
+    color: #333;
+    padding: 2px 6px; /* Reduced padding */
+    border-radius: 4px; /* Smaller border radius */
+    height: 1rem; /* Reduced height */
+    font-size: 0.8rem; /* Reduced font size */
+}
+
+.form-floating input:focus,
+.form-floating select:focus {
+    border-color: #ff6b6b;
+    box-shadow: 0 0 8px rgba(255, 107, 107, 0.2);
+    outline: none;
+}
+
+/* Styling the floating labels */
+.form-floating label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    pointer-events: none;
+    color: #888;
+    font-size: 0.75rem;
+    background-color: none;
+}
+
+.form-floating input:focus + label,
+.form-floating input:not(:placeholder-shown) + label,
+.form-floating select:focus + label,
+.form-floating select:not(:placeholder-shown) + label {
+    top: -8px;
+    left: 8px;
+    font-size: 0.7rem;
+    color: #ff6b6b;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0 4px;
+    border-radius: 3px;
+}
+
+/* Adjusting layout for form sections */
+.NewFlightPageContainer .newFlightSpan1,
+.NewFlightPageContainer .newFlightSpan2,
+.NewFlightPageContainer span {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.NewFlightPageContainer span > div {
+    flex: 1;
+    min-width: 120px; /* Further reduced min-width */
+}
+
+/* Button styling */
+.NewFlightPageContainer button {
+    align-self: center;
+    width: 35%;
+    margin-top: 1rem;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 8px 16px; /* Reduced padding */
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.NewFlightPageContainer button:hover {
+    background-color: #ff3f3f;
+    transform: translateY(-2px);
+}
+
+/* Not approved box styling */
+.notApproved-box {
+    width: 50%;
+    text-align: center;
+    background-color: rgba(255, 117, 96, 0.9);
+    padding: 2rem; /* Reduced padding */
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.notApproved-box h3 {
+    color: #ffe3b8;
+}
+
+.notApproved-box p {
+    color: #ffd4c4;
+}

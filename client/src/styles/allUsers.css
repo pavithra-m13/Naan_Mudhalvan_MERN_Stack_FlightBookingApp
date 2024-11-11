@@ -1,0 +1,87 @@
+/* General page layout */
+.alluserstitle{
+    font-size: 24px;
+}
+.all-users-page {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 13vh;
+    padding-left: 3vw;
+    background-image: url('../assets/allusers.webp'); /* Replace with the actual path to your image */
+    background-size: cover;
+    background-position: center;
+    color: rgba(77, 109, 134, 0.934);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15px;
+    align-items: center;
+  }
+  
+  .all-users-page h2 {
+    font-size: 15px;
+    font-weight: bolder;
+    color:orange;
+    margin-bottom: 2vh;
+    align-items: center;
+    padding-left: 44%;
+  }
+  
+  /* Two-column layout */
+  .users-container {
+    display: flex;
+    gap: 5vw;
+    width: 100%;
+    margin-top: 3vh;
+  }
+  
+  .users-column, .operators-column {
+    width: 45%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2vh 2vw;
+    border-radius: 1rem;
+    overflow-y: auto;
+    max-height: 70vh;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .users-column h3, .operators-column h3 {
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 34%;
+    color: rgb(244, 122, 0);
+    margin-bottom: 1.5vh;
+  }
+  
+  .users-column .all-users, .operators-column .all-users {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .users-column .all-users::-webkit-scrollbar,
+  .operators-column .all-users::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Styling individual user cards */
+  .all-users .user {
+    background-color: rgba(248, 193, 111, 0.85);
+    border-radius: 0.8rem;
+    padding: 2vh 1.5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* font-size: 1rem; */
+  }
+  
+  .all-users .user p {
+    margin: 0;
+    color: #2b6a8a;
+    /* font-size: 1.1rem; */
+  }
+  
+  .all-users .user p b {
+    font-weight: 200;
+    color: #184d63;
+  }
+  
