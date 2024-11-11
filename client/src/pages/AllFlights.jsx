@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import '../styles/AllFlights.css';
 import Footer from './Footer';
-
 const AllFlights = () => {
     const [flights, setFlights] = useState([]);
     const navigate = useNavigate();
